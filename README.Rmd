@@ -14,7 +14,8 @@ The FibonacciSeq package provides a simple, efficient way to generate Fibonacci 
 You can install the development version of FibonacciSeq from GitHub with:
 
 ```{r}
-# devtools::install_github("stat545ubc-2023/assignment-b2-MaxonZhao")
+#library("devtools")
+devtools::install_github("stat545ubc-2023/assignment-b2-MaxonZhao")
 ```
 
 ## Example
@@ -22,8 +23,8 @@ You can install the development version of FibonacciSeq from GitHub with:
 -   This is a basic example showing how to generate the first 10 terms of the Fibonacci sequence:
 
     ```{r}
-    # library(FibonacciSeq)
-    # generate_fibonacci(n = 10)
+    library(fibonacciseq)
+    generate_fibonacci(n = 10)
     ```
 
 ## Usage
@@ -32,12 +33,12 @@ You can install the development version of FibonacciSeq from GitHub with:
 
     ```{r}
     # Generate the first 10 Fibonacci numbers with default start values of 0 and 1
-    #fibonacci_sequence <- generate_fibonacci(n = 10)
-    #print(fibonacci_sequence)
+    fibonacci_sequence <- generate_fibonacci(n = 10)
+    print(fibonacci_sequence)
 
     # Generate a Fibonacci sequence with custom starting values of 2 and 3
-    #custom_start_sequence <- generate_fibonacci(n = 10, start_values = c(2, 3))
-    #print(custom_start_sequence)
+    custom_start_sequence <- generate_fibonacci(n = 10, start_values = c(2, 3))
+    print(custom_start_sequence)
     ```
 
 ## Documentation
@@ -45,5 +46,5 @@ You can install the development version of FibonacciSeq from GitHub with:
 -   After installing the package, you can access the full documentation for generate_fibonacci with:
 
     ```{r}
-    #?generate_fibonacci
+    ?generate_fibonacci
     ```
